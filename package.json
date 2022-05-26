@@ -9,9 +9,6 @@
   "bugs": "https://github.com/kldzj/stream-throttle/issues",
   "author": "kldzj <npm@kldzj.dev>",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "test": "jest",
     "build": "tsc",
