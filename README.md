@@ -18,14 +18,14 @@ $ npm i -S @kldzj/stream-throttle
 
 ### Usage
 
-Used to throttle the output rate of a single stream.
-
 #### Options
 
 - `rate`: The rate in bytes per second at which to emit data.
 - `chunkSize`: The size of chunks to split the received data into. Must be less than or equal to `rate`. Defaults to `rate / 10`.
 
 #### `Throttle`
+
+Used to throttle the output rate of a single stream.
 
 ```typescript
 import { Throttle } from '@kldzj/stream-throttle';
