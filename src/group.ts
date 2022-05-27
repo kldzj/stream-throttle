@@ -37,7 +37,7 @@ export class ThrottleGroup {
     }
 
     this._rate = options.rate;
-    this._chunkSize = this.calculateChunkSize(options.chunkSize ?? this.rate);
+    this._chunkSize = options.chunkSize ?? this.calculateChunkSize(this.rate);
     this._bucket = new TokenBucket({
       tokensPerInterval: options.rate,
       bucketSize: options.rate,
