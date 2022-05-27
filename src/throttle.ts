@@ -8,9 +8,14 @@ export class Throttle extends Transform {
     return this._group;
   }
 
-  constructor(opts: ThrottleOptions, group?: ThrottleGroup) {
+  constructor(opts: ThrottleOptions | ThrottleGroup) {
     super();
-    this._group = group ?? new ThrottleGroup(opts);
+
+    if (opts instanceof ThrottleGroup) {
+      this._group = opts;
+    } else {
+      this._group = new ThrottleGroup(opts);
+    }
   }
 
   public _transform(chunk: any, _encoding: BufferEncoding, callback: TransformCallback): void {
