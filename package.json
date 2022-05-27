@@ -1,6 +1,6 @@
 {
   "name": "@kldzj/stream-throttle",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Throttle one or multiple stream(s) to a maximum rate",
   "keywords": [
     "stream",
