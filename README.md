@@ -21,7 +21,7 @@ $ npm i -S @kldzj/stream-throttle
 #### Options
 
 - `rate`: The rate in bytes per second at which to emit data.
-- `burst`: The burst rate in bytes per second. Must be less than or equal to `rate`. Defaults to `rate`.
+- `burst`: The burst rate in bytes per second. Must be greather than or equal to `rate`. Defaults to `rate`.
 - `chunkSize`: The size of chunks to split the received data into. Must be less than or equal to `rate`. Defaults to `rate / 10`.
 
 #### `Throttle`

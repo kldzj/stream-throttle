@@ -34,7 +34,7 @@ export class Throttle extends Transform {
       .removeTokens(slice.length)
       .then(() => {
         this.push(slice);
-        return this._process(chunk, newPosition, callback);
+        this._process(chunk, newPosition, callback);
       })
       .catch((err) => {
         callback(err);
